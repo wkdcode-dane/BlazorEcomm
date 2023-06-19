@@ -1,0 +1,12 @@
+﻿<h3>Products</h3>
+
+<section class="row">
+    @foreach (var product in Products)
+    {
+        <div class="col-md-3 mb-4">
+            <img class="media-image w-100 mb-4" src=@product.ImageUrl alt=@product.Title/>
+            <h2>@product.Title</h2>
+            <p>£@product.Price</p>
+        </div>
+    }
+</section>

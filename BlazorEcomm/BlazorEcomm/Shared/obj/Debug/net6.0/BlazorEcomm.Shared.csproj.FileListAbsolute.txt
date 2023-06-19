@@ -1,0 +1,12 @@
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\bin\Debug\net6.0\BlazorEcomm.Shared.deps.json
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\bin\Debug\net6.0\BlazorEcomm.Shared.dll
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\bin\Debug\net6.0\BlazorEcomm.Shared.pdb
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\obj\Debug\net6.0\BlazorEcomm.Shared.csproj.AssemblyReference.cache
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\obj\Debug\net6.0\BlazorEcomm.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\obj\Debug\net6.0\BlazorEcomm.Shared.AssemblyInfoInputs.cache
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\obj\Debug\net6.0\BlazorEcomm.Shared.AssemblyInfo.cs
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\obj\Debug\net6.0\BlazorEcomm.Shared.csproj.CoreCompileInputs.cache
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\obj\Debug\net6.0\BlazorEcomm.Shared.dll
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\obj\Debug\net6.0\refint\BlazorEcomm.Shared.dll
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\obj\Debug\net6.0\BlazorEcomm.Shared.pdb
+C:\Users\DaneBridgman\Desktop\git-projects\BlazorEcomm\BlazorEcomm\BlazorEcomm\Shared\obj\Debug\net6.0\ref\BlazorEcomm.Shared.dll
