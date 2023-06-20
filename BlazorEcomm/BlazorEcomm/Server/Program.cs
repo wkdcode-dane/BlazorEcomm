@@ -1,6 +1,6 @@
 global using BlazorEcomm.Shared;
 global using Microsoft.EntityFrameworkCore;
-using BlazorEcomm.Server.Data;
+global using BlazorEcomm.Server.Data;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
