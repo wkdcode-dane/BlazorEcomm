@@ -1,0 +1,12 @@
+﻿@attribute [Route(RelativePath)]
+
+<h3>ProductDetails</h3>
+
+
+<div class="product">
+    <h1 class="mb-4">@product?.Title</h1>
+    <img src=@product?.ImageUrl alt=@product?.Title class="mb-4 mw-100" />
+    <p><strong>Description:</strong></p>
+    <p>@product?.Description</p>
+    <p class="text-xl">@product?.Price</p>
+</div>
