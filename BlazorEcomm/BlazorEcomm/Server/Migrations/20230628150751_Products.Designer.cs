@@ -3,6 +3,7 @@ using BlazorEcomm.Server.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorEcomm.Server.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20230628150751_Products")]
+    partial class Products
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -175,7 +178,7 @@ namespace BlazorEcomm.Server.Migrations
                             Id = 8,
                             CategoryId = 4,
                             Description = "Catching the Big Fish: Meditation, Consciousness, and Creativity, a book by film director David Lynch, is an autobiography and self-help guide comprising 84 vignette-like chapters. Lynch comments on a wide range of topics 'from metaphysics to the importance of screening your movie before a test audience.' Catching the Big Fish was inspired by Lynch's experiences with Transcendental Meditation (TM), which he began practicing in 1973. In the book, Lynch writes about his approach to filmmaking and other creative arts. Catching the Big Fish was published by Tarcher on December 28, 2006.",
-                            ImageUrl = "https://upload.wikimedia.org/wikipedia/en/1/1f/Book_catching.png",
+                            ImageUrl = "https://en.wikipedia.org/wiki/Catching_the_Big_Fish#/media/File:Book_catching.png",
                             Price = 6.50m,
                             Title = "Catching the Big Fish"
                         });

@@ -95,6 +95,24 @@
                     ImageUrl = "https://upload.wikimedia.org/wikipedia/en/7/73/Hyperion_cover.jpg",
                     Price = 11.50m,
                     CategoryId = 1
+                },
+                new Product
+                {
+                    Id = 7,
+                    Title = "A Moveable Feast",
+                    Description = "A Moveable Feast is a 1964 memoir and belles-lettres by American author Ernest Hemingway about his years as a struggling expat journalist and writer in Paris during the 1920s. It was published posthumously.[1] The book details Hemingway's first marriage to Hadley Richardson and his associations with other cultural figures of the Lost Generation in Interwar France.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/en/a/aa/MoveableFeast.jpg",
+                    Price = 3.50m,
+                    CategoryId = 3
+                },
+                new Product
+                {
+                    Id = 8,
+                    Title = "Catching the Big Fish",
+                    Description = "Catching the Big Fish: Meditation, Consciousness, and Creativity, a book by film director David Lynch, is an autobiography and self-help guide comprising 84 vignette-like chapters. Lynch comments on a wide range of topics 'from metaphysics to the importance of screening your movie before a test audience.' Catching the Big Fish was inspired by Lynch's experiences with Transcendental Meditation (TM), which he began practicing in 1973. In the book, Lynch writes about his approach to filmmaking and other creative arts. Catching the Big Fish was published by Tarcher on December 28, 2006.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/en/1/1f/Book_catching.png",
+                    Price = 6.50m,
+                    CategoryId = 4
                 }
             );
         }
