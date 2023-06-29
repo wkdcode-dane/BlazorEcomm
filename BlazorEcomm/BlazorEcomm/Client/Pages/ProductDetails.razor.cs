@@ -10,6 +10,8 @@
 
         private Product? product = null;
 
+        private List<Category> categories = new List<Category>(); 
+
         private string message = string.Empty;
 
         [Inject]
@@ -22,15 +24,15 @@
         {
             message = "Loading product...";
 
-            var result = await _productService.GetProduct(Id);
+            var productResult = await _productService.GetProduct(Id);
 
-            if (!result.Success)
+            if (!productResult.Success)
             {
-                message = result.Message;
+                message = productResult.Message;
             }
             else
             {
-                product = result.Data;
+                product = productResult.Data;
             }
 
         }

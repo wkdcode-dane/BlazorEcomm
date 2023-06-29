@@ -26,5 +26,12 @@ namespace BlazorEcomm.Server.Controllers
             var result = await _categoryService.GetCategoryByIdAsync(categoryId);
             return Ok(result);
         }
+
+        [HttpGet("{categorySlug}")]
+        public async Task<ActionResult<ServiceResponse<Category>>> GetCategoryBySlug(int categorySlug)
+        {
+            var result = await _categoryService.GetCategoryByIdAsync(categorySlug);
+            return Ok(result);
+        }
     }
 }

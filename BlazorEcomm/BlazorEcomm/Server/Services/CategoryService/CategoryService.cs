@@ -37,5 +37,25 @@
 
             return response;
         }
+
+/*        public async Task<ServiceResponse<Category>> GetCategoryBySlugAsync(string slug)
+        {
+            var response = new ServiceResponse<Category>();
+
+
+            var category = await _context.Categories.FindAsync(slug);
+
+            if (category == null)
+            {
+                response.Success = false;
+                response.Message = "Sorry, but no category has been found.";
+            }
+            else
+            {
+                response.Data = category;
+            }
+
+            return response;
+        }*/
     }
 }

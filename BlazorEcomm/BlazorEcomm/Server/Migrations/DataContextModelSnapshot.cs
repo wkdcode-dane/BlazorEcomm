@@ -33,7 +33,7 @@ namespace BlazorEcomm.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Url")
+                    b.Property<string>("Slug")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -46,31 +46,31 @@ namespace BlazorEcomm.Server.Migrations
                         {
                             Id = 1,
                             Name = "Sci-Fi",
-                            Url = "sci-fi"
+                            Slug = "sci-fi"
                         },
                         new
                         {
                             Id = 2,
                             Name = "Fantasy",
-                            Url = "fantasy"
+                            Slug = "fantasy"
                         },
                         new
                         {
                             Id = 3,
                             Name = "Biography",
-                            Url = "biography"
+                            Slug = "biography"
                         },
                         new
                         {
                             Id = 4,
                             Name = "Art & Design",
-                            Url = "art-and-design"
+                            Slug = "art-and-design"
                         },
                         new
                         {
                             Id = 5,
                             Name = "Classics",
-                            Url = "classics"
+                            Slug = "classics"
                         });
                 });
 

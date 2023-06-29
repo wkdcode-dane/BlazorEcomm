@@ -59,6 +59,33 @@ a, .btn-link {
     color: white;
 }
 
-    .blazor-error-boundary::after {
-        content: "An error has occurred."
-    }
+.blazor-error-boundary::after {
+    content: "An error has occurred."
+}
+
+.product-item {
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a.product-item:hover {
+    color: lightslategrey;
+}
+
+.project-item-image {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-item-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.project-item-price {
+    font-size: 24px;
+    font-weight: 700;
+}

@@ -1,6 +1,17 @@
-﻿<h3>Products</h3>
+﻿<h1>Products</h1>
 
 <section class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-items-center mb-4 flex-wrap">
+            <p class="me-4 mb-4 font-bold"><strong>Categories:</strong></p>
+
+            @foreach (var category in _categoryService.Categories)
+            {
+                <a href="/category/@category.Slug" class="me-4 mb-4 btn btn-primary">@category.Name</a>
+            }
+        </div>
+    </div>
+
     @if(_productService != null)
     {
         foreach (var product in _productService.Products)
@@ -8,14 +19,15 @@
             <div class="col-md-3 mb-4">
                 <a 
                     href="product/@product.Id"
-                    alt=@product.Title>
+                    alt=@product.Title
+                    class="product-item">
                     <img 
-                        class="media-image w-100 mb-4" 
+                        class="media-image w-100 mb-4 project-item-image" 
                         src=@product.ImageUrl 
                         alt=@product.Title
                     />
-                    <h2>@product.Title</h2>
-                    <p>£@product.Price</p>
+                    <h3 class="project-item-title">@product.Title</h3>
+                    <p class="project-item-price">£@product.Price</p>
                 </a>
             </div>
         }

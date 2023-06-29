@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorEcomm.Server.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230628142144_Categories")]
-    partial class Categories
+    [Migration("20230629142200_urlsToSlugs")]
+    partial class urlsToSlugs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,7 +36,7 @@ namespace BlazorEcomm.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Url")
+                    b.Property<string>("Slug")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -49,31 +49,31 @@ namespace BlazorEcomm.Server.Migrations
                         {
                             Id = 1,
                             Name = "Sci-Fi",
-                            Url = "sci-fi"
+                            Slug = "sci-fi"
                         },
                         new
                         {
                             Id = 2,
                             Name = "Fantasy",
-                            Url = "fantasy"
+                            Slug = "fantasy"
                         },
                         new
                         {
                             Id = 3,
                             Name = "Biography",
-                            Url = "biography"
+                            Slug = "biography"
                         },
                         new
                         {
                             Id = 4,
                             Name = "Art & Design",
-                            Url = "art-and-design"
+                            Slug = "art-and-design"
                         },
                         new
                         {
                             Id = 5,
                             Name = "Classics",
-                            Url = "classics"
+                            Slug = "classics"
                         });
                 });
 
@@ -163,6 +163,24 @@ namespace BlazorEcomm.Server.Migrations
                             ImageUrl = "https://upload.wikimedia.org/wikipedia/en/7/73/Hyperion_cover.jpg",
                             Price = 11.50m,
                             Title = "Hyperion"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CategoryId = 3,
+                            Description = "A Moveable Feast is a 1964 memoir and belles-lettres by American author Ernest Hemingway about his years as a struggling expat journalist and writer in Paris during the 1920s. It was published posthumously.[1] The book details Hemingway's first marriage to Hadley Richardson and his associations with other cultural figures of the Lost Generation in Interwar France.",
+                            ImageUrl = "https://upload.wikimedia.org/wikipedia/en/a/aa/MoveableFeast.jpg",
+                            Price = 3.50m,
+                            Title = "A Moveable Feast"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CategoryId = 4,
+                            Description = "Catching the Big Fish: Meditation, Consciousness, and Creativity, a book by film director David Lynch, is an autobiography and self-help guide comprising 84 vignette-like chapters. Lynch comments on a wide range of topics 'from metaphysics to the importance of screening your movie before a test audience.' Catching the Big Fish was inspired by Lynch's experiences with Transcendental Meditation (TM), which he began practicing in 1973. In the book, Lynch writes about his approach to filmmaking and other creative arts. Catching the Big Fish was published by Tarcher on December 28, 2006.",
+                            ImageUrl = "https://upload.wikimedia.org/wikipedia/en/1/1f/Book_catching.png",
+                            Price = 6.50m,
+                            Title = "Catching the Big Fish"
                         });
                 });
 

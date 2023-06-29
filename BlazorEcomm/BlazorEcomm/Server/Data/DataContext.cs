@@ -13,31 +13,31 @@
                     new Category { 
                         Id = 1,
                         Name = "Sci-Fi",
-                        Url = "sci-fi"
+                        Slug = "sci-fi"
                     },
                     new Category
                     {
                         Id = 2,
                         Name = "Fantasy",
-                        Url = "fantasy"
+                        Slug = "fantasy"
                     },
                     new Category
                     {
                         Id = 3,
                         Name = "Biography",
-                        Url = "biography"
+                        Slug = "biography"
                     },
                     new Category
                     {
                         Id = 4,
                         Name = "Art & Design",
-                        Url = "art-and-design"
+                        Slug = "art-and-design"
                     },
                     new Category
                     {
                         Id = 5,
                         Name = "Classics",
-                        Url = "classics"
+                        Slug = "classics"
                     }
                 );
 
