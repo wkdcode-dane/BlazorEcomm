@@ -38,24 +38,16 @@
             return response;
         }
 
-/*        public async Task<ServiceResponse<Category>> GetCategoryBySlugAsync(string slug)
+        public async Task<ServiceResponse<List<Product>>> GetCategoryBySlugAsync(string slug)
         {
-            var response = new ServiceResponse<Category>();
-
-
-            var category = await _context.Categories.FindAsync(slug);
-
-            if (category == null)
+            var response = new ServiceResponse<List<Product>>
             {
-                response.Success = false;
-                response.Message = "Sorry, but no category has been found.";
-            }
-            else
-            {
-                response.Data = category;
-            }
+                Data = await _context.Products
+                    .Where(p => p.Category.Slug.ToLower().Equals(slug.ToLower()))
+                    .ToListAsync()
+            };
 
             return response;
-        }*/
+        }
     }
 }
